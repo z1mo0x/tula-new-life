@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая жизнь</title>
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="header__info">
+                    <a href="tel:+79000000000" class="header__info-item">
+                        <img src="img/phone-icon.png" alt="">
+                        <span>+7 (900) 000 00 00</span>
+                    </a>
+                    <a href="mailto:example@mail.ru" class="header__info-item">
+                        <img src="img/mail-icon.png" alt="">
+                        <span>example@mail.ru</span>
+                    </a>
+                    <div class="header__info-item header__place">
+                        <img src="img/place-icon.png" alt=""> Тульская область, Щекинский р-н, <br> с. Карамышево, ул. Центральная, д. 1
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile__wrapper">
+                    <div class="header-mobile__menu">
+                        <img src="img/menu.png" alt="">
+                    </div>
+                    <a href="/" class="header-mobile__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header-mobile__button">
+                        <button class="button" data-fancybox="" data-src="#consult">Бесплатная консультация</button>
+                    </div>
+                    <div class="header-mobile__actions">
+                        <a href="tel:+79000000000" class="header-mobile__icon">
+                            <img src="img/mobile-phone.png" alt="">
+                        </a>
+                        <a href="mailto:example@mail.ru" class="header-mobile__icon">
+                            <img src="img/mobile-email.png" alt="">
+                        </a>
+                        <a href="#" class="header-mobile__icon">
+                            <img src="img/mobile-search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__menu">
+                <img src="img/sidebar-menu.png" alt="">
+            </div>
+            <a href="#" class="sidebar__search">
+                <img src="img/search.png" alt="">
+            </a>
+            <a href="#" class="sidebar__icon">
+                <img src="img/wa.png" alt="">
+            </a>
+            <a href="#" class="sidebar__icon">
+                <img src="img/tg.png" alt="">
+            </a>
+            <a href="#" class="sidebar__icon">
+                <img src="img/vk.png" alt="">
+            </a>
+            <div class="sidebar__line"></div>
+            <div class="sidebar__button ">
+                <button data-fancybox="" data-src="#consult" class="button">Бесплатная консультация</button>
+            </div>
+        </div>
+    </aside>
+    <div class="menu">
+        <div class="menu__wrapper">
+            <div class="menu__close">
+                <img src="img/close.png" alt="">
+            </div>
+            <ul class="menu__nav">
+                <li><a href="">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Продукция</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">О производстве</a></li>
+                <li><a href="">Награды</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="menu__phone">
+                <a href="+79000000000">+7 (900) 000 00 00</a>
+            </div>
+            <button data-fancybox="" data-src="#consult" class="menu__button button">Бесплатная консультация</button>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <ul class="nav__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li class="nav__downtoggle">
+                        <a href="#">Продукция <img src="img/arrow_up.svg" alt=""></a>
+                        <ul class="nav__downmenu">
+                            <li><a href="#">Продукция 1</a></li>
+                            <li><a href="#">Продукция 2</a></li>
+                            <li><a href="#">Продукция 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О производстве</a></li>
+                    <li><a href="#">Награды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__items">
+                    <li class="breadcrumbs__item"> <a href="/">Главная</a></li>
+                    <li class="breadcrumbs__item"> <a href="#">Молочная продукция</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__active"> <a href="#">Молоко</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="product">
+            <div class="container">
+                <h1 class="product__title title-text">Молоко пастеризованное 3,4-6,0%</h1>
+                <div class="product__wrapper">
+                    <div class="product__item">
+                        <div class="product__image">
+                            <div class="swiper product__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper product__thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide product__slide-small">
+                                        <div class="product__slide-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item-info">
+                            <div class="product__descr">Молоко пастеризованное 2,5% жирности имеет особо насыщенный сливочный вкус, позволяющий получить максимум удовольствия от него. Семейный формат 1400г.
+                            </div>
+                            <div class="product__chars">
+                                <div class="product__char">
+                                    <div class="product__char-title">Артикул</div>
+                                    <div class="product__char-descr">123000</div>
+                                </div>
+                                <div class="product__char">
+                                    <div class="product__char-title">Состав</div>
+                                    <div class="product__char-descr">изготовлено из молока нормализованного</div>
+                                </div>
+
+                                <div class="product__goods">
+                                    <div class="product__goods-title">Пищевая ценность <br> (содержание в 100 г)</div>
+                                    <div class="product__goods-items">
+                                        <div class="product__goods-item">
+                                            <div class="product__goods-name">Жиры</div>
+                                            <div class="product__goods-value">2,5г;</div>
+                                        </div>
+                                        <div class="product__goods-item">
+                                            <div class="product__goods-name">Белки</div>
+                                            <div class="product__goods-value">2,8 г;</div>
+                                        </div>
+                                        <div class="product__goods-item">
+                                            <div class="product__goods-name">Углеводы</div>
+                                            <div class="product__goods-value">4,7 г.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="product__char">
+                                    <div class="product__char-title">Срок годности</div>
+                                    <div class="product__char-descr">18 суток</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="characters">
+            <div class="container">
+                <div class="characters__wrapper">
+                    <div class="characters__tabs" id="tabs">
+                        <ul class="characters__titles">
+                            <li><a href="#tabs-1">Описание</a></li>
+                            <li><a href="#tabs-2">Характеристики</a></li>
+                        </ul>
+                        <div class="characters__tab" id="tabs-1">
+                            <div class="characters__tab-wrap">
+                                <div class="characters__tab-title">Подробнее</div>
+                                <div class="characters__tab-descr">Молоко пастеризованное 2,5% жирности имеет особо насыщенный сливочный вкус, позволяющий получить максимум удовольствия от него. Семейный формат 1400г.</div>
+                                <ul class="characters__tab-list">
+                                    <li>Энергетическая ценность / калорийность от 61 до 74 ккал.</li>
+                                    <li>Условия хранения: Хранить при температуре 4±2 °С.</li>
+                                    <li>Срок годности 18 суток</li>
+                                </ul>
+                            </div>
+                            <div class="characters__tab-wrap">
+                                <div class="characters__tab-title">Вкусно и полезно</div>
+                                <div class="characters__tab-descr">Молоко пастеризованное 2,5% жирности имеет особо насыщенный сливочный вкус, позволяющий получить максимум удовольствия от него.
+                                </div>
+                                <ol class="characters__tab-olist">
+                                    <li>Семейный формат 1400г.</li>
+                                    <li>1400г.</li>
+                                    <li>Срок годности 18 суток</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div class="characters__tab-chars" id="tabs-2">
+                            <div class="characters__tab-wrap">
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Жиры</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">2,5г;</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Белки</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">2,8 г;</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Углеводы</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">4,7 г.</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Срок годности</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">18 суток</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Жиры</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">2,5г;</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Белки</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">2,8 г;</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Углеводы</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">4,7 г.</div>
+                                </div>
+                                <div class="characters__tab-char">
+                                    <div class="characters__tab-name">Срок годности</div>
+                                    <div class="characters__tab-line"></div>
+                                    <div class="characters__tab-value">18 суток</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="same-products">
+            <div class="container">
+                <div class="same-products__wrapper">
+                    <div class="same-products__title title-text">Похожие товары</div>
+                    <div class="same-products__container">
+                        <div class="same-products__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide same-products__slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-badge milk-badge">Молочная продукция</div>
+                                        <div class="catalog__item-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                        <div class="catalog__item-title">Молоко 3,4-6,0%
+                                        </div>
+                                        <ul class="catalog__item-characters">
+                                            <li>Пастеризованное</li>
+                                            <li>900 мл</li>
+                                        </ul>
+                                        <div class="catalog__item-button">
+                                            <a href=""><button class="button button-white">Подробнее</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide same-products__slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-badge milk-badge">Молочная продукция</div>
+                                        <div class="catalog__item-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                        <div class="catalog__item-title">Молоко 3,4-6,0%
+                                        </div>
+                                        <ul class="catalog__item-characters">
+                                            <li>Пастеризованное</li>
+                                            <li>900 мл</li>
+                                        </ul>
+                                        <div class="catalog__item-button">
+                                            <a href=""><button class="button button-white">Подробнее</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide same-products__slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-badge milk-badge">Молочная продукция</div>
+                                        <div class="catalog__item-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                        <div class="catalog__item-title">Молоко 3,4-6,0%
+                                        </div>
+                                        <ul class="catalog__item-characters">
+                                            <li>Пастеризованное</li>
+                                            <li>900 мл</li>
+                                        </ul>
+                                        <div class="catalog__item-button">
+                                            <a href=""><button class="button button-white">Подробнее</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide same-products__slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-badge milk-badge">Молочная продукция</div>
+                                        <div class="catalog__item-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                        <div class="catalog__item-title">Молоко 3,4-6,0%
+                                        </div>
+                                        <ul class="catalog__item-characters">
+                                            <li>Пастеризованное</li>
+                                            <li>900 мл</li>
+                                        </ul>
+                                        <div class="catalog__item-button">
+                                            <a href=""><button class="button button-white">Подробнее</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide same-products__slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-badge milk-badge">Молочная продукция</div>
+                                        <div class="catalog__item-image">
+                                            <img src="img/photo.png" alt="">
+                                        </div>
+                                        <div class="catalog__item-title">Молоко 3,4-6,0%
+                                        </div>
+                                        <ul class="catalog__item-characters">
+                                            <li>Пастеризованное</li>
+                                            <li>900 мл</li>
+                                        </ul>
+                                        <div class="catalog__item-button">
+                                            <a href=""><button class="button button-white">Подробнее</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about__slider-pagination same-products__slider-pagination"></div>
+                        </div>
+                        <div class="same-products__slider-next">
+                            <img src="img/arrow-slider-right.png" alt="">
+                        </div>
+                        <div class="same-products__slider-prev">
+                            <img src="img/arrow-slider-left.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="footer__lists">
+                    <ul class="footer__list">
+                        <li class="footer__list-title"><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">О производстве</a></li>
+                        <li><a href="#">Награды</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-title"><a href="#">Продукция</a></li>
+                        <li><a href="#">Продукция 1</a></li>
+                        <li><a href="#">Продукция 2</a></li>
+                        <li><a href="#">Продукция 3</a></li>
+                        <li><a href="#">Продукция 4</a></li>
+                    </ul>
+                </div>
+                <div class="footer__brevis">
+                    <img src="img/brevis.png" alt="">
+                    <span>Создание сайта - <br> <a href="https://www.brevis-site.ru/">интернет агенство
+                            “BREVIS”</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="overlay" id="consult">
+        <div class="popup">
+            <div class="popup__close">
+                <img src="img/close.png" onclick="$.fancybox.close();" alt="">
+            </div>
+            <div class="popup__title">Оставьте ваши данные и мы перезвоним!</div>
+            <form class="popup__form">
+                <div class="popup__form-item">
+                    <div class="popup__form-name">
+                        Ваше имя
+                    </div>
+                    <div class="popup__form-input">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="popup__form-item">
+                    <div class="popup__form-name">
+                        Ваш номер телефона
+                    </div>
+                    <div class="popup__form-input">
+                        <input type="text" class="maskphone">
+                    </div>
+                </div>
+                <div class="popup__form-checkbox">
+                    <label for="consultCheck">
+                        <input type="checkbox" checked id="consultCheck" value="Y">
+                        <span class="popup__form-label">Я подтверждаю согласие на
+                            обработку моих персональных данных</span>
+                    </label>
+                </div>
+                <div class="popup__form-button">
+                    <button class="button" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
