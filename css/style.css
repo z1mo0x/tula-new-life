@@ -1587,12 +1587,20 @@ body {
 
 .breadcrumbs {
     margin-top: 40px;
+    width: 100%;
+    overflow: auto;
+}
+
+.breadcrumbs__wrap {
+    width: max-content;
+    overflow: auto;
 }
 
 .breadcrumbs__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow-x: auto;
     gap: 22px;
 }
 
@@ -1907,6 +1915,11 @@ body {
 
 .same-products__container {
     position: relative;
+}
+
+.same-products__slide {
+    display: grid;
+    place-items: center;
 }
 
 .same-products__slider-next {
