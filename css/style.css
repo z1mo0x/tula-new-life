@@ -388,6 +388,24 @@ body {
     background: white;
 }
 
+@media (max-height:945px){
+    .sidebar__line{
+        height:200px;
+    }
+}
+
+@media (max-height:845px){
+    .sidebar__line{
+        height:100px;
+    }
+}
+
+@media (max-height:745px){
+    .sidebar__line{
+        height:50px;
+    }
+}
+
 .sidebar__button {
     display: block;
     transform: rotate(-90deg);
