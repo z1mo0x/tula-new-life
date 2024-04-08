@@ -408,7 +408,7 @@ body {
 
 @media (max-height:690px){
     .sidebar__line{
-        height:0px;
+        display:none;
     }
 }
 
