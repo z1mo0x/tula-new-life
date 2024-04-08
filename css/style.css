@@ -2067,9 +2067,6 @@ body {
         bottom: 260px;
     }
 
-    .sidebar__line {
-        height: 50%;
-    }
 }
 
 @media (max-width: 1350px) {
