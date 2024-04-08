@@ -406,6 +406,12 @@ body {
     }
 }
 
+@media (max-height:690px){
+    .sidebar__line{
+        height:0px;
+    }
+}
+
 .sidebar__button {
     display: block;
     transform: rotate(-90deg);
