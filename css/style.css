@@ -390,7 +390,6 @@ body {
 
 .sidebar__button {
     display: block;
-    height: 100%;
     transform: rotate(-90deg);
     transform-origin: center;
     margin-top: 100px;
