@@ -354,6 +354,7 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
+    width: 86px;
     height: 100vh;
     background: #00A655;
     -webkit-box-shadow: 2px 15px 29.2px 0px rgba(0, 0, 0, 0.1);
@@ -382,8 +383,7 @@ body {
 
 .sidebar__line {
     padding: 30px 0;
-    flex-grow: 1;
-    height: 70%;
+    height: 300px;
     width: 2px;
     background: white;
 }
@@ -391,9 +391,9 @@ body {
 .sidebar__button {
     display: block;
     height: 100%;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    margin-top: 100px;
 }
 
 .sidebar__button button {
@@ -406,17 +406,6 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 100%;
-    transform: rotate(180deg);
-}
-
-@supports (not (writing-mode: vertical-lr)) {
-  /* Если вертикальная ориентация не поддерживается, применяем вертикальную ориентацию */
-  .sidebar__button{
-    /* Вертикальное направление */
-    writing-mode: vertical-lr;
-    /* Поворачиваем текст на 180 градусов, чтобы он был читаемым */
-    transform: rotate(180deg);
-  }
 }
 
 .menu {
