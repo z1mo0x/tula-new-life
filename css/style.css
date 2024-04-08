@@ -409,6 +409,16 @@ body {
     transform: rotate(180deg);
 }
 
+@supports (not (writing-mode: vertical-lr)) {
+  /* Если вертикальная ориентация не поддерживается, применяем вертикальную ориентацию */
+  .sidebar__button{
+    /* Вертикальное направление */
+    writing-mode: vertical-lr;
+    /* Поворачиваем текст на 180 градусов, чтобы он был читаемым */
+    transform: rotate(180deg);
+  }
+}
+
 .menu {
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
